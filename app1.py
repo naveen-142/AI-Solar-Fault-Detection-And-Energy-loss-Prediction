@@ -106,11 +106,11 @@ def get_cloud_cover(lat, lon, date_str):
 # -------------------------------------------------------------
 # LOAD YOLO MODELS
 # -------------------------------------------------------------
-@st.cache_resource
+# @st.cache_resource
 def load_fault_model(path):
     return YOLO(path)
 
-@st.cache_resource
+# @st.cache_resource
 def load_panel_model():
     return YOLO("models/panel_detect.pt")
 
