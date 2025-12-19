@@ -5,14 +5,16 @@
 # CLOUD COVER → REDUCED SUNLIGHT
 # DATE VALIDATION → NO FUTURE DATES ALLOWED
 # =============================================================
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
 import streamlit as st
 import requests
-from ultralytics import YOLO
 from PIL import Image
 import numpy as np
 import cv2
 from datetime import date
+from ultralytics import YOLO
 
 # -------------------------------------------------------------
 # STREAMLIT CONFIG
